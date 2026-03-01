@@ -1,0 +1,1 @@
+{"version":3,"file":"comment.controller.js","sourceRoot":"","sources":["../../../src/api/controllers/comment.controller.ts"],"names":[],"mappings":"AAAA,MAAM,iBAAiB,GAAG;IACxB,cAAc,EAAE,KAAK,WAAW,GAAY,EAAE,GAAa;IAI3D,CAAC;IACD,kBAAkB,EAAE,UAAU,GAAY,EAAE,GAAa,IAAG,CAAC;CAC9D,CAAC;AAEF,OAAO,EAAC,iBAAiB,EAAC,CAAC"}

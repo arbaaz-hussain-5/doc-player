@@ -1,0 +1,1 @@
+{"version":3,"file":"RootError.error.js","sourceRoot":"","sources":["../../src/errors/RootError.error.ts"],"names":[],"mappings":"AAAA,MAAM,SAAU,SAAQ,KAAK;IAC3B,YAAY,OAAe;QACzB,KAAK,CAAC,OAAO,CAAC,CAAC;QACf,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC,WAAW,CAAC,IAAI,CAAC;IACpC,CAAC;CACF;AACD,OAAO,EAAE,SAAS,EAAE,CAAC"}

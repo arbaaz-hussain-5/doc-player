@@ -1,0 +1,1 @@
+{"version":3,"file":"DatabaseMongooseError.error.js","sourceRoot":"","sources":["../../src/errors/DatabaseMongooseError.error.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,sBAAsB,CAAC;AAEjD,MAAM,qBAAsB,SAAQ,SAAS;IAC3C,IAAI,CAAS;IACb,YAAY,OAAe;QACzB,KAAK,CAAC,OAAO,CAAC,CAAC;QACf,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACnB,CAAC;CACF;AAED,OAAO,EAAE,qBAAqB,EAAE,CAAC"}

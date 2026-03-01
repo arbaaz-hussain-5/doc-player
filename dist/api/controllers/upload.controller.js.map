@@ -1,0 +1,1 @@
+{"version":3,"file":"upload.controller.js","sourceRoot":"","sources":["../../../src/api/controllers/upload.controller.ts"],"names":[],"mappings":"AACA,MAAM,gBAAgB,GAAG;IACvB,aAAa,EAAE,KAAK,WAAW,GAAY,EAAE,GAAa;QACxD,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,CAAC;IACnB,CAAC;CACF,CAAC;AAEF,OAAO,EAAC,gBAAgB,EAAC,CAAC"}

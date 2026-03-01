@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext", // Essential for ESM
+    "moduleResolution": "NodeNext", // Ensures imports work like ESM
+    "lib": ["ESNext", "DOM"], // Standard for modern JS
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // Catch more errors early
+    "skipLibCheck": true, // Faster builds
+    "outDir": "./dist",
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+  },
+  "include": ["src/**/*"]
+}
