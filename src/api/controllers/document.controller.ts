@@ -1,5 +1,8 @@
-import { Response, Request, Application } from 'express';
-import { deleteTheDocument, getTheDocument } from '../../services/document.service.js';
+import { Response, Request, Application } from "express";
+import {
+  deleteTheDocument,
+  getTheDocument,
+} from "../../services/document.service.js";
 
 const DocumentController = {
   getTheDocuments: async (req: Request, res: Response, next: Function) => {
@@ -16,7 +19,7 @@ const DocumentController = {
     } catch (err) {
       next(err);
     }
-  }
+  },
 };
 
 export { DocumentController };

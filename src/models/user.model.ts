@@ -1,4 +1,4 @@
-import { Schema, model, Types } from 'mongoose';
+import { Schema, model, Types } from "mongoose";
 
 const userSchema = new Schema(
   {
@@ -6,11 +6,11 @@ const userSchema = new Schema(
     email: { type: String, required: true },
     password: { type: String, required: true },
     profilePicture: { type: String },
-    document: { type: [{ type: Types.ObjectId }] }
+    document: { type: [{ type: Types.ObjectId }] },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
-const User = model('User', userSchema);
+const User = model("User", userSchema);
 
 export { User };

@@ -1,6 +1,6 @@
-import { loadEnv } from './loaders/env.loaders.js';
-import { loadDatabase } from './loaders/database.loader.js';
-import { loadExpress } from './loaders/express.loader.js';
+import { loadEnv } from "./loaders/env.loaders.js";
+import { loadDatabase } from "./loaders/database.loader.js";
+import { loadExpress } from "./loaders/express.loader.js";
 const PORT = 3000;
 const start = async () => {
   try {
@@ -10,7 +10,7 @@ const start = async () => {
       console.log(`Server started on port ${PORT}`);
     });
   } catch (err) {
-    console.error('Shutdown: DB connection failed', err);
+    console.error("Shutdown: DB connection failed", err);
     process.exit(1);
   }
 };

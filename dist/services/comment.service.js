@@ -1,4 +1,4 @@
-import { Comment } from '../models/commment.model.js';
+import { Comment } from "../models/commment.model.js";
 async function findCommenetById(id, projectionObject = []) {
   return await Comment.findById(id, projectionObject).exec();
 }

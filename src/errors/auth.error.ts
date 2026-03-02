@@ -1,4 +1,4 @@
-import { RootError } from './RootError.error.js';
+import { RootError } from "./RootError.error.js";
 
 class AuthError extends RootError {
   code: number;
@@ -60,4 +60,10 @@ class AuthTokenCreationFailedError extends AuthError {
   }
 }
 
-export { AuthenticationFailedError, AuthTokenCreationFailedError, PasswordHashingError, PasswordMisMatchError, TokenNotFoundError };
+export {
+  AuthenticationFailedError,
+  AuthTokenCreationFailedError,
+  PasswordHashingError,
+  PasswordMisMatchError,
+  TokenNotFoundError,
+};

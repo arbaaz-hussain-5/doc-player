@@ -1,5 +1,5 @@
-import { Document } from '../models/document.model.js';
-import { DatabaseMongooseError } from '../errors/DatabaseMongooseError.error.js';
+import { Document } from "../models/document.model.js";
+import { DatabaseMongooseError } from "../errors/DatabaseMongooseError.error.js";
 async function findDocumentById(id, projectionObject = []) {
   return await Document.findById(id, projectionObject).exec();
 }
@@ -9,11 +9,11 @@ async function addDocument(documentName, author, documentLink, genre) {
       documentName,
       author,
       documentLink,
-      genre
+      genre,
     }).save();
     return true;
   } catch (err) {
-    throw new DatabaseMongooseError('database error');
+    throw new DatabaseMongooseError("database error");
   }
 }
 export { findDocumentById, addDocument };

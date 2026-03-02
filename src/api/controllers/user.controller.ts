@@ -1,6 +1,6 @@
-import express from 'express';
-import { Response, Request, Application } from 'express';
-import { getTheUser } from '../../services/user.service.js';
+import express from "express";
+import { Response, Request, Application } from "express";
+import { getTheUser } from "../../services/user.service.js";
 
 const UserController = {
   getUserById: async function (req: Request, res: Response, next: Function) {
@@ -10,7 +10,7 @@ const UserController = {
     } catch (err) {
       next(err);
     }
-  }
+  },
 };
 
 export { UserController };

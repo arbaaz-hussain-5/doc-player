@@ -1,4 +1,4 @@
-import { RootError } from './RootError.error.js';
+import { RootError } from "./RootError.error.js";
 class UserNotFoundError extends RootError {
   code;
   constructor(message) {

@@ -5,7 +5,7 @@ const UserController = {
   getUserByUserId: function (req, res) {},
   getuserByEmailId: function (req, res) {},
   updateUserById: function (req, res) {},
-  deleterUserById: function (req, res) {}
+  deleterUserById: function (req, res) {},
 };
 export { UserController };
 //# sourceMappingURL=user.controller.js.map
