@@ -1,7 +1,7 @@
-import "./loaders/env.loaders.js";
-import { loadDatabase } from "./loaders/database.loader.js";
-import { loadExpress } from "./loaders/express.loader.js";
-import { config } from "./config/index.js";
+import './loaders/env.loaders.js';
+import { loadDatabase } from './loaders/database.loader.js';
+import { loadExpress } from './loaders/express.loader.js';
+import { config } from './config/index.js';
 
 async function start() {
   try {
@@ -10,7 +10,7 @@ async function start() {
       console.log(`Server started on port ${config.serverPort}`);
     });
   } catch (err) {
-    console.error("Shutdown: DB connection failed", err);
+    console.error('Shutdown: DB connection failed', err);
     process.exit(1);
   }
 }

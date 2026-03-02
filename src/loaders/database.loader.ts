@@ -1,14 +1,14 @@
-import mongoose from "mongoose";
-import { config } from "../config/index.js";
+import mongoose from 'mongoose';
+import { config } from '../config/index.js';
 
 async function loadDatabase() {
   mongoose
-    .connect(config.dataBaseUrl || "")
+    .connect(config.dataBaseUrl || '')
     .then(() => {
-      console.log("Database connected successfully!");
+      console.log('Database connected successfully!');
     })
     .catch(err => {
-      console.error("Connection error:", err);
+      console.error('Connection error:', err);
     });
 }
 

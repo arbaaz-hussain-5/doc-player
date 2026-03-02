@@ -1,6 +1,6 @@
 import { RootError } from './RootError.error.js';
 
-class UserError extends RootError {
+class DocumentError extends RootError {
   code: number;
   cause: any;
   constructor(message: string, cause: any = null) {
@@ -10,7 +10,7 @@ class UserError extends RootError {
   }
 }
 
-class UserAlreadyExistError extends UserError {
+class DocumentNotFoundError extends DocumentError {
   code: number;
   cause: any;
   constructor(message: string, cause: any = null) {
@@ -20,14 +20,4 @@ class UserAlreadyExistError extends UserError {
   }
 }
 
-class UserNotFoundError extends UserError {
-  code: number;
-  cause: any;
-  constructor(message: string, cause: any = null) {
-    super(message);
-    this.code = 7861;
-    this.cause = cause;
-  }
-}
-
-export { UserAlreadyExistError, UserNotFoundError };
+export { DocumentNotFoundError };

@@ -5,12 +5,12 @@ import { uploadRouter } from './upload.routes.js';
 import { commentRouter } from './comment.routes.js';
 import { documentRouter } from './document.routes.js';
 
-const masterRouter = Router();
+const v1Router = Router();
 
-masterRouter.use("/users", userRouter);
-masterRouter.use("/auth", authRouter);
-masterRouter.use("/uploads", uploadRouter);
-masterRouter.use("/comments", commentRouter);
-masterRouter.use("/documents", documentRouter);
+v1Router.use('/users', userRouter);
+v1Router.use('/auth', authRouter);
+v1Router.use('/uploads', uploadRouter);
+v1Router.use('/comments', commentRouter);
+v1Router.use('/documents', documentRouter);
 
-export {masterRouter};
+export { v1Router };

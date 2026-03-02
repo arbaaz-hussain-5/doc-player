@@ -1,4 +1,4 @@
-import { RootError } from "./RootError.error.js";
+import { RootError } from './RootError.error.js';
 
 class AuthError extends RootError {
   code: number;
@@ -30,8 +30,6 @@ class TokenNotFoundError extends AuthError {
   }
 }
 
-
-
 class AuthenticationFailedError extends AuthError {
   code: number;
   cause: any;
@@ -41,7 +39,6 @@ class AuthenticationFailedError extends AuthError {
     this.cause = cause;
   }
 }
-
 
 class PasswordMisMatchError extends AuthError {
   code: number;
@@ -53,7 +50,6 @@ class PasswordMisMatchError extends AuthError {
   }
 }
 
-
 class AuthTokenCreationFailedError extends AuthError {
   code: number;
   cause: any;
@@ -64,4 +60,4 @@ class AuthTokenCreationFailedError extends AuthError {
   }
 }
 
-export { PasswordHashingError,TokenNotFoundError, AuthenticationFailedError, PasswordMisMatchError, AuthTokenCreationFailedError };
+export { AuthenticationFailedError, AuthTokenCreationFailedError, PasswordHashingError, PasswordMisMatchError, TokenNotFoundError };

@@ -1,14 +1,22 @@
-import { Response, Request, Application } from "express";
-import { findDocumentById } from "../../services/document.service.js";
+import { Response, Request, Application } from 'express';
+import { deleteTheDocument, getTheDocument } from '../../services/document.service.js';
 
 const DocumentController = {
-  getDocuments: async (req: Request, res: Response) => {
-    res.send("welcome to document page");
+  getTheDocuments: async (req: Request, res: Response, next: Function) => {
+    try {
+      const targetDocument = await getTheDocument(req.body.documentId);
+      res.send(targetDocument);
+    } catch (err) {
+      next(err);
+    }
   },
-  readTheDocument: async function (req: Request, res: Response) {
-    const id = req.query.documentId;
-    if (typeof id === "string") res.send(await findDocumentById(id));
-  },
+  deleteTheDocument: async (req: Request, res: Response, next: Function) => {
+    try {
+      await deleteTheDocument(req.body.documentId);
+    } catch (err) {
+      next(err);
+    }
+  }
 };
 
 export { DocumentController };

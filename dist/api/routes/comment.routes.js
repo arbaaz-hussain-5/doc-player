@@ -1,8 +1,8 @@
-import express from "express";
+import express from 'express';
 const commentRouter = express.Router();
-commentRouter.get("/", (req, res) => {
-    res.send("Users home page");
+commentRouter.get('/', (req, res) => {
+  res.send('Users home page');
 });
-commentRouter.post("/");
+commentRouter.post('/');
 export { commentRouter };
 //# sourceMappingURL=comment.routes.js.map

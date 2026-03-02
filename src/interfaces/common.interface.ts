@@ -1,4 +1,4 @@
 type UserObject = { userId: string };
-type SignInResult = "success" | "userIdAlreadyExist";
+type SignInResult = 'success' | 'userIdAlreadyExist';
 
-export {UserObject, SignInResult};
+export { UserObject, SignInResult };

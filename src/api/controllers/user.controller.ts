@@ -1,19 +1,16 @@
-import express from "express";
-import { Response, Request, Application } from "express";
+import express from 'express';
+import { Response, Request, Application } from 'express';
+import { getTheUser } from '../../services/user.service.js';
 
 const UserController = {
-  getUserById: function (req: Request, res: Response) {
-    res.send(req.body)
-
-  },
-
-  getUserByUserId: function (req: Request, res: Response) {},
-
-  getuserByEmailId: function (req: Request, res: Response) {},
-
-  updateUserById: function (req: Request, res: Response) {},
-
-  deleterUserById: function (req: Request, res: Response) {},
+  getUserById: async function (req: Request, res: Response, next: Function) {
+    try {
+      const targetUser = await getTheUser(req.body.userId);
+      res.send(targetUser);
+    } catch (err) {
+      next(err);
+    }
+  }
 };
 
 export { UserController };
